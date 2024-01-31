@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktif Website</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+</head>
+<body>
+    
+    <div class="navbar-container">
+        <nav class="nav-content">
+            <div class="nav-right">
+                <div class="nav-title">
+                    <h1>Aesco.</h1>
+                </div>
+            </div>
+            <div class="nav-left">
+                <div class="nav-chooseLayer">
+                    <p onclick="btnScroll('product')">PRODUCT</p>
+                    <p onclick="btnScroll('galery')">GALERY</p>
+                    <p onclick="contact()">CONTACT</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="body-content">
+        <div class="contact-content" id="navContact">
+            <div class="contact-content-left">
+                <h1>Contact</h1>
+                <p>Always Open</p>
+                <p>15.00 - 23.00</p>
+                <form class="contact-email-phone">
+                    <p>aesco.com</p>
+                    <p>123-456-789</p>
+                    <p>246-135-789</p>
+                </form>
+                <div class="contact-content-social">
+                    <div class="content-social">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-github"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-content-right">
+                <p>"We take pride in offering a cafe service that is highly professional, not only delighting your taste buds with a variety of delicious dishes but also prioritizing customer comfort as our top priority."
+                </p>
+                    <form id="formRequest">
+                        <h2>Comemrcial Request</h2>
+                        <input placeholder="Full Name">
+                        <input placeholder="Message">
+                        <input placeholder="Email">
+                        <button onclick="submitRequest()" type="submit">SUBMIT REQUEST</button>
+                    </form>
+            </div>
+        </div>
+        <div class="container-1" onclick="defaultClickContact()">
+            <img src="img/jakub-dziubak-XtUd5SiX464-unsplash.jpg">
+        </div>
+        <div class="container-2" id="productDiv">
+            <!-- <div class="block-optionMenu"></div> -->
+            <div class="product-coffee-block" id="coffeeBlock">
+                <p>coffee empty</p>
+                <button onclick="coffee()"><i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="product-bakery-block" id="bakeryBlock">
+                <p>bakery empty</p>
+                <button onclick="bakery()"><i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="content-product">
+                <div class="product-left"></div>
+                <div class="product-right">
+                    <div class="product-right-1">
+                        <div class="txt-product-right">
+                            <h2>Coffee</h2>
+                            <p>is a story of passion and dedication.</p>
+                            <button onclick="coffee()">Open</button>
+                        </div>
+                    </div>
+                    <div class="product-right-2"></div>
+                    <div class="product-right-3"></div>
+                    <div class="product-right-4">
+                        <div class="txt-product-right">
+                            <h2>Dessert and Bakery</h2>
+                            <p>of flavors that dance on your palate.</p>
+                            <button onclick="bakery()">Open</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-3" id="galeryDiv">
+            <div class="content-galery">
+                <div class="galery-grid-1">
+                    <div class="item-img-1"></div>
+                    <div class="item-img-2"></div>
+                    <div class="item-txt-1">
+                        <h2>Beverage</h2>
+                    </div>
+                    <div class="item-img-7"></div>
+                </div>
+                <div class="galery-grid-2">
+                    <div class="item-img-3"></div>
+                    <div class="item-img-4"></div>
+                    <div class="item-img-5"></div>
+                    <div class="item-img-6"></div>
+                    <div class="item-img-8"></div>
+                    <div class="item-txt-2">
+                        <h2>
+                            Area
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+
+    <script src="content.js"></script>
+    <script>
+
+
+
+    </script>
+
+</body>
+</html>
