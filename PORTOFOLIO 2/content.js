@@ -1,7 +1,7 @@
 var contactObject = document.getElementById('navContact');
 var contactSlide = false;
 
-function contact() {
+function contact(param) {
     if (contactSlide === false) {
         contactSlide = true;
         contactObject.style.left = "60vw";
@@ -9,6 +9,9 @@ function contact() {
         contactSlide = false;
         contactObject.style.left = "100vw";
     }
+
+    param === "contact" ? location.href = "#home" : location.href = "";
+    console.log(contactSlide)
 }
 
 function defaultClickContact() {
@@ -28,7 +31,10 @@ window.addEventListener("scroll", function() {
     } else {
         element.style.color = "black"
     }
+
+    console.log(contactSlide)
 })
+console.log(contactSlide)
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('formRequest').addEventListener('submit', function(event) {
